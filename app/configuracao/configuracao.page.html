@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Configuração
+    </ion-title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>Tamanho da Fonte</p>
+  <ion-list>
+    <ion-item>
+      <ion-range min="20" max="80" step="2">
+        <ion-icon size="small" slot="start" name="remove"></ion-icon>
+        <ion-icon slot="end" name="add"></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+      <ion-item>
+        <ion-label>Som</ion-label>
+        <ion-toggle [(ngModel)]="som"></ion-toggle>
+      </ion-item>
+    
+      <ion-item>
+          <ion-label>Notificação</ion-label>
+          <ion-toggle [(ngModel)]="notificacao"></ion-toggle>
+        </ion-item>
+    </ion-list>
+
+</ion-content>
