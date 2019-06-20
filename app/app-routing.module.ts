@@ -21,6 +21,9 @@ const routes: Routes = [
   },
   { path: 'cadastro', 
   loadChildren: './cadastro/cadastro.module#CadastroPageModule' 
+  },
+  { path: 'detalhes', 
+  loadChildren: './detalhes/detalhes.module#DetalhesPageModule' 
   }
 ];
 
