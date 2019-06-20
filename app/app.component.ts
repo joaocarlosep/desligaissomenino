@@ -16,6 +16,11 @@ export class AppComponent {
       icon: 'home'
     },
     {
+      title: 'Cadastro',
+      url: '/cadastro',
+      icon: 'add-circle'
+    },
+    {
       title: 'Configuração',
       url: '/configuracao',
       icon: 'build'

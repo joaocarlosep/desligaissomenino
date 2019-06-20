@@ -19,7 +19,9 @@ const routes: Routes = [
     path: 'ajuda',
     loadChildren: './ajuda/ajuda.module#AjudaPageModule'
   },
-  { path: 'cadastro', loadChildren: './cadastro/cadastro.module#CadastroPageModule' }
+  { path: 'cadastro', 
+  loadChildren: './cadastro/cadastro.module#CadastroPageModule' 
+  }
 ];
 
 @NgModule({

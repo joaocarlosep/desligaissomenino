@@ -1,9 +1,35 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>cadastro</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Cadastro
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+
+  <ion-item>
+    <ion-label position="floating">Nome do Imóvel</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Tipo</ion-label>
+    <ion-select>
+      <ion-select-option value="" >não especificado</ion-select-option>
+      <ion-select-option value="casa" selected>Casa</ion-select-option>
+      <ion-select-option value="apt">Apartamento</ion-select-option>
+      <ion-select-option value="predio">Prédio</ion-select-option>
+      <ion-select-option value="kitnet">Kitnet</ion-select-option>
+    </ion-select>
+  </ion-item>
+<br>
+  <ion-button (click)="onClick()" expand="full">
+    Adicionar
+  </ion-button>
+  
 
 </ion-content>
