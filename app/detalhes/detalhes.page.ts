@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import Chart from 'chart.js';
 import { UpperCasePipe } from '@angular/common';
+
 @Component({
   selector: 'app-detalhes',
   templateUrl: './detalhes.page.html',
