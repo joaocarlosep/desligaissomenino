@@ -1,43 +1,73 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>
-      Detalhes
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Detalhes de consumo</ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 
-  <div class="ion-padding">
-    <ion-card>
-      <ion-card-header>
-        Bar Chart
-      </ion-card-header>
-      <ion-card-content>
-        <canvas #barCanvas></canvas>
-      </ion-card-content>
-    </ion-card>
+    <ion-item>
+        <ion-label position="stacked">Valor limite de consumo:</ion-label>
+        <ion-input placeholder="kWh/mês"></ion-input>
+    </ion-item>
+
 
     <ion-card>
-      <ion-card-header>
-        Doughnut Chart
-      </ion-card-header>
-      <ion-card-content>
-        <canvas #doughnutCanvas></canvas>
-      </ion-card-content>
+        <ion-card-header>
+            <ion-card-subtitle>Consumo até o momento</ion-card-subtitle>
+            <ion-card-title>1584 kWh</ion-card-title>
+        </ion-card-header>
     </ion-card>
- 
+
     <ion-card>
-      <ion-card-header>
-        Line Chart
-      </ion-card-header>
-      <ion-card-content>
-        <canvas #lineCanvas></canvas>
-      </ion-card-content>
+        <ion-card-header>
+            Consumo x Limite*
+        </ion-card-header>
+        <ion-card-content>
+            <canvas #doughnutCanvas></canvas>
+            <br>
+            <p style="font-size: 90%"> *Aqui você tem a relação do limite estabelecido com o consumo que já aconteceu.
+                Vai com calma menino, economiza ai. Não deixa a barrinha verde aumentar, ok? </p>
+        </ion-card-content>
     </ion-card>
-  </div>
+
+    <ion-card>
+        <ion-card-header>
+            Consumo na semana:
+        </ion-card-header>
+        <ion-card-content>
+            <canvas #lineCanvas></canvas>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Consumo por mês:
+        </ion-card-header>
+        <ion-card-content>
+            <canvas #barCanvas></canvas>
+        </ion-card-content>
+    </ion-card>
+
+
+
+
+    <div>
+        <ion-item>
+            <ion-label>Notificação de Limite</ion-label>
+            <ion-toggle></ion-toggle>
+        </ion-item>
+    </div>
+
+    <ion-item>
+        <ion-label>Print do seu consumo</ion-label>
+        <ion-button>
+            <ion-icon slot="icon-only" name="camera"></ion-icon>
+        </ion-button>
+    </ion-item>
+
 
 </ion-content>
